@@ -2,6 +2,7 @@
 $issignedup = false;
   $issignedin = false;
     session_start();
+    $_SESSION["cart"] = array();
     $_SESSION["username"] = "";
   if (isset($_POST["signup"])) {
     $fname = $_POST["firstname"];

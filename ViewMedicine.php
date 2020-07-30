@@ -29,7 +29,7 @@ if(isset($_POST['Update'])){
 
 <body>
  <?php include("./partials/navbar.php"); ?>
-  <table class="table table-striped">
+  <table class="table table-striped" style="margin-top: 60px;">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Medicine Id</th>

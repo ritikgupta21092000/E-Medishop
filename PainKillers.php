@@ -14,6 +14,15 @@
 </head>
 
 <body>
+  <?php if ($issignedup) { ?>
+
+    <?php echo "<script>swal('Successfully Signed Up!', 'Clicked the Ok button!', 'success')</script>"; ?>
+  <?php } ?>
+
+    <?php if ($issignedin) { ?>
+
+    <?php echo "<script>swal('Successfully Signed In!', 'Clicked the Ok button!', 'success')</script>"; ?>
+  <?php } ?>
 <?php include("./partials/navbar.php"); ?>
 <?php include("./partials/modal.php"); ?>
 <div class="card mt-5 pt-2">

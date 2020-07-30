@@ -128,19 +128,20 @@
             <div class="col-12">
                <h3>Our Mission</h3>
             </div>
-            <div class="col-12 ">
-               <p>
+            <div class="col-12" style="padding: 30px; border: 1px solid #4CAF50;">
+               <h6>
                   We, students of Thakur college of Engineering and Technology have chosen this topic as our Employablity Development Skills(ESD) Project with the mission to provide an efficient tool to the customers for purchasing online medicines with best offers available. Sometimes, It may happen that required prescribed medicine is not available at our local shops such as Covid Essential items specially during this Lockdown situation, so buyers can easily go through our website and get as per their requirements. So, our aim is to help the human kind by providing Quality Medicines at Affordable Generic Medical Store price or even less than that with good offers.
-               </p>     
+               </h6>     
             </div>
-            <div class="col-12 col-sm-6">
-                <div>
-                  <h5>Creators : </h5>
-                  <h6>Pratik Gupta<br>Richa Gupta<br>Ritik Gupta<br>Shivam Gupta<br>Suman Gupta</h6>
-                </div>
-                <div class="btn-group mt-4" role="group">
-                  <h5>Thank you for visiting our website.....</h5>  
-                 </div>
+          </div>
+          <div class="row row-content">
+            <div class="col-12">
+               <h3>Creators</h3>
+            </div>
+            <div class="col-12" style="padding: 30px; border: 1px solid #4CAF50;">
+               <h6>
+                  Pratik Gupta<br>Richa Gupta<br>Ritik Gupta<br>Shivam Gupta<br>Suman Gupta
+                </h6>     
             </div>
           </div>
         </div>
@@ -373,7 +374,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>COVID Essentials| Upto 80% Off</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./CovidEssentials.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -452,7 +453,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>Homeopathy| Flat 20% Cashback</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./Homeopathy.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -531,7 +532,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>Pain Killers| Flat 10% Off</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./PainKillers.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -610,7 +611,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>AntiBacterial Medicines| Flat 18% Cashback</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./AntiBacterial.php">See all</a></h5>
         </div>
       </div>
     </div>

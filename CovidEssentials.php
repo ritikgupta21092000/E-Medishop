@@ -1,4 +1,5 @@
 <?php 
+session_start();
   include("db_conn.php");
   include("./partials/login_signup.php");
 ?>
@@ -14,36 +15,46 @@
 </head>
 
 <body>
+  <?php if ($issignedup) { ?>
+
+    <?php echo "<script>swal('Successfully Signed Up!', 'Clicked the Ok button!', 'success')</script>"; ?>
+  <?php } ?>
+
+    <?php if ($issignedin) { ?>
+
+    <?php echo "<script>swal('Successfully Signed In!', 'Clicked the Ok button!', 'success')</script>"; ?>
+  <?php } ?>
 <?php include("./partials/navbar.php"); ?>
 <?php include("./partials/modal.php"); ?>
 <div class="card mt-5 pt-2">
     <div class="card-header">
-          <h3 class="col-12 col-sm-8">Shop Now <br>COVID Essentials| Upto 80% Off</h3>
+      <h3 class="col-12 col-sm-8">Shop Now <br>COVID Essentials| Upto 80% Off</h3>
     </div>
     
     <div class="card-body">
       <div class="row">
         
             <?php
-            include('db_conn.php');
-            $q = "Select * from medicines where `med_type`='COVID Essential'";
-            $query = mysqli_query($con, $q);
-            while($row = mysqli_fetch_array($query)){
-            ?>  
-            <div class="col-12 col-sm-2">
-            <form action="" method="POST" enctype="multipart/form-data">
-                  <div class="card card-body">
-                    <div class="container">
-                      <img class="dynamic-image" src="<?php echo $row["image"] ?>" width="150" height="150" alt="">
-                    </div>
-                    <div>
-                      <h6><?php echo $row['med_name']; ?></h6>
-                      <p><b>Rs.<?php echo $row['price']; ?></b></p>
-                      <button type="submit" class="btn btn-success">Add to Cart</button>
-                    </div>
-                  </div>
-            </form>
-        </div>
+              include('db_conn.php');
+              $q = "Select * from medicines where `med_type`='COVID Essential'";
+              $query = mysqli_query($con, $q);
+              while($row = mysqli_fetch_array($query)){
+              ?>  
+              <div class="col-12 col-sm-2">
+                <form action="" method="post" enctype="multipart/form-data">
+                      <div class="card card-body">
+                        <div class="container">
+                          <img class="dynamic-image" src="<?php echo $row["image"] ?>" width="150" height="150" alt="">
+                        </div>
+                        <div>
+                          <h6><?php echo $row['med_name']; ?></h6>
+                          <p><b>Rs.<?php echo $row['price']; ?></b></p>
+                          <input type="hidden" name="medicine_id" value=<?php echo $row['med_id']; ?> />
+                          <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+                        </div>
+                      </div>
+                </form>
+              </div>
             <?php } ?>
       </div>
     </div>
