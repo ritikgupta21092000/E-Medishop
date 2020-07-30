@@ -3,7 +3,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.php">
         <b>E-Medishop</b>
         <img src="./images/images.png" style="height: 35px; width: 70px">
       </a>
@@ -26,10 +26,10 @@
               </b>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Covid Essentials</a>
-              <a class="dropdown-item" href="#">Homeopathy</a>
-              <a class="dropdown-item" href="#">Osteopathy</a>
-              <a class="dropdown-item" href="#">Allopathy</a>
+              <a class="dropdown-item" href="./CovidEssentials.php">Covid Essentials</a>
+              <a class="dropdown-item" href="./Homeopathy.php">Homeopathy</a>
+              <a class="dropdown-item" href="./AntiBacterial.php">Anti Bacterial</a>
+              <a class="dropdown-item" href="./PainKillers.php">Painkillers</a>
             </div>
           </li>
 

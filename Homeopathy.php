@@ -10,6 +10,7 @@
 
 <body>
 <?php include("./partials/navbar.php"); ?>
+<?php include("./partials/modal.php"); ?>
 <div class="card">
     <div class="card-header">
           <h3 class="col-12 col-sm-8">Shop Now <br>Homeopathy| Flat 20% Cashback</h3>
@@ -17,17 +18,18 @@
     
     <div class="card-body">
       <div class="row">
-        <div class="col-12 col-sm-2">
-          <form action="" method="POST" enctype="multipart/form-data">
+        
             <?php
             include('db_conn.php');
             $q = "Select * from admin where `med_type`='Homeopathy'";
             $query = mysqli_query($con, $q);
             while($row = mysqli_fetch_array($query)){
             ?>
+            <div class="col-12 col-sm-2">
+          <form action="" method="POST" enctype="multipart/form-data">
                 <div class="card card-body">
                   <div class="container">
-                    <?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" alt="Image">'; ?>
+                    <img class="dynamic-image" src="<?php echo $row["image"] ?>" width="150" height="150" alt="">
                   </div>
                   <div>
                     <h6><?php echo $row['med_name']; ?></h6>
@@ -35,9 +37,9 @@
                     <button type="submit" class="btn btn-success">Add to Cart</button>
                   </div>
                 </div>
-            <?php } ?>
           </form>
         </div>
+            <?php } ?>
       </div>
     </div>
 </div>

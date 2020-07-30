@@ -14,6 +14,15 @@ $(document).ready(function () {
   $("#Feedback").on("click", function () {
     $("#FeedbackModal").modal("toggle");
   });
+  $("#Add").on("click", function () {
+    $("#AddModal").modal("toggle");
+  });
+  $("#edit").on("click", function () {
+    $("#editModal").modal("toggle");
+  });
+  $("#delete").on("click", function () {
+    $("#deleteModal").modal("toggle");
+  });
   var date = new Date();
   var year = date.getFullYear();
   document.getElementById("year").innerHTML = year;

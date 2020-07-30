@@ -8,7 +8,7 @@
     $email = $_POST["email"];
     $username = $_POST["username"];
     $password = $_POST["password"];
-    if ($fname == "" || $lname == "" || $username == "" || $password == "") {
+    if ($fname == "" || $lname == "" || $email =="" ||$username == "" || $password == "") {
       if ($fname == "") {
         echo "<script>alert('Please Enter your First Name')</script>";
       } else if ($lname == "") {
@@ -17,7 +17,9 @@
         echo "<script>alert('Please Enter your UserName')</script>";
       } elseif ($password == "") {
         echo "<script>alert('Please Enter your Password')</script>";
-      } 
+      } elseif ($email == "") {
+        echo "<script>alert('Please Enter your Email Id')</script>";
+      }
     } else {
       if ($username == $password) {
         echo "<script>alert('Username and Password can not be Same')</script>";
@@ -28,6 +30,11 @@
       }
     }
   }
+  if (isset($_POST["signin"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +44,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Medishop</title>
   <?php include("./partials/link.php"); ?>
+
 </head>
 
 <body>
@@ -60,13 +68,13 @@
             <div class="form-row">
               <div class="form-group col-sm-4">
                 <label class="sr-only" for="exampleInputUsername3">Username</label>
-                <input type="username" class="form-control form-control-sm mr-1" id="exampleInputUsernamel3"
-                  placeholder="Enter username">
+                <input type="username" class="form-control form-control-sm mr-1" name="username" id="exampleInputUsernamel3"
+                  placeholder="Enter username" required>
               </div>
               <div class="form-group col-sm-4">
                 <label class="sr-only" for="exampleInputPassword3">Password</label>
-                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
-                  placeholder="Password">
+                <input type="password" class="form-control form-control-sm mr-1" name="password" id="exampleInputPassword3"
+                  placeholder="Password" required>
               </div>
               <div class="col-sm-auto">
                 <div class="form-check">
@@ -78,8 +86,8 @@
             </div>
             <div class="form-row">
               <a type="button" class="btn btn-success btn-sm mr-auto" href="#SignUpModal" id="SignUp">New User? SignUp</a>
-              <button type="button" class="btn btn-secondary btn-sm ml-auto" class="close" data-dismiss="modal" id="close2">Cancel</button>
-              <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>
+              <button type="button" class="btn btn-secondary btn-sm ml-auto" class="close" data-dismiss="modal">Cancel</button>
+              <button type="submit" name="signin" class="btn btn-success btn-sm ml-1">Sign in</button>
             </div>
           </form>
         </div>

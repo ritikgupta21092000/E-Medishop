@@ -67,7 +67,14 @@ footer p {
   padding-top: 20px;
 }
 
+.sidebar h4 {
+  color: white;
+  margin-bottom: 50px;
+  padding: 6px 8px 6px 16px;
+}
+
 .sidebar a {
+  margin-top: 10px;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -78,4 +85,14 @@ footer p {
 .sidebar a:hover {
   text-decoration: underline;
   color: #f1f1f1;
+  background-color: black;
+}
+
+.medicine-title {
+  font-size: 10px;
+}
+
+.card .container .dynamic-image {
+  width: 150px;
+  height: 150px;
 }
