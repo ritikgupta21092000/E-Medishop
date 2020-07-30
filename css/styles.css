@@ -1,0 +1,81 @@
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  height: 500px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.carousel .carousel-inner-text {
+  color: purple;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 70px;
+}
+
+.carousel .carousel-inner-text p {
+  padding-top: 30px;
+  color: purple;
+  font-size: 20px;
+}
+
+.nav-item {
+  padding: 0px 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.footer-anchor {
+  margin: 20px 10px;
+  color: black;
+}
+
+footer p {
+  padding-top: 10px;
+}
+
+.dashboard-first-row {
+  margin-top: 50px;
+}
+
+.dashboard {
+  background-image: url(../images/online-doctor-consultation.jpeg);
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.dashboard-button {
+  margin-top: 200px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #512DA8;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #f1f1f1;
+}
