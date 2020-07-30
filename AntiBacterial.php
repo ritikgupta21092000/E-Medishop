@@ -1,3 +1,8 @@
+<?php 
+  include("db_conn.php");
+  include("./partials/login_signup.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +16,7 @@
 <body>
 <?php include("./partials/navbar.php"); ?>
 <?php include("./partials/modal.php"); ?>
-<div class="card">
+<div class="card mt-5 pt-2">
     <div class="card-header">
           <h3 class="col-12 col-sm-8">Shop Now <br>AntiBacterial Medicines| Flat 18% Cashback</h3>
     </div>
@@ -21,7 +26,7 @@
         
             <?php
             include('db_conn.php');
-            $q = "Select * from admin where `med_type`='Anti Bacterial'";
+            $q = "Select * from medicines where `med_type`='Anti Bacterial'";
             $query = mysqli_query($con, $q);
             while($row = mysqli_fetch_array($query)){
             ?>

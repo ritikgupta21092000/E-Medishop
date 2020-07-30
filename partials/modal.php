@@ -6,7 +6,7 @@
           <button type="button" class="close" data-dismiss="modal" id="close1">&times;</button>
         </div>
         <div class="modal-body">
-          <form>
+          <form method="post">
             <div class="form-row">
               <div class="form-group col-sm-4">
                 <label class="sr-only" for="exampleInputUsername3">Username</label>
@@ -161,6 +161,76 @@
         </div>
       </div>
       <div class="col-12 col-md">
+      </div>
+    </div>
+  </div>
+
+  <div id="ContactUsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">ContactUs </h4>
+          <button type="button" class="close" data-dismiss="modal" id="close3">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-content">
+            <div class="col-12">
+               <h3>Location Information</h3>
+            </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                    <h5>Our Address</h5>
+                     <address style="font-size: 100%">
+                   A-Block, Thakur Educational Campus<br>
+                   Shyamnarayan Thakur Marg, Thakur Village<br>
+                   Kandivali(E). Mumbai - 400101.<br></address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <div>
+                    <i class="fa fa-phone"></i>: +922 1234 5678<br>
+                    <i class="fa fa-fax"></i>: +922 8765 4321<br>
+                    <i class="fa fa-envelope"></i>:
+                    <a href="mailto:Emedishop2020@gmail.com">Emedishop2020@gmail.com</a>
+                </div>
+                <div class="btn-group mt-4" role="group">
+                     <a role="button" class="btn btn-primary" href="tel:+92212345678"><i class="fa fa-phone"></i> Call</a>
+                     <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                     <a role="button" class="btn btn-success" href="mailto:Emedishop2020@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="AboutUsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">About Us </h4>
+          <button type="button" class="close" data-dismiss="modal" id="close3">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-content">
+            <div class="col-12">
+               <h3>Our Mission</h3>
+            </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+               <p>
+                  We, students of Thakur college of Engineering and Technology have chosen this topic
+                  as our Employablity Development Skills(ESD) Project with the mission to provide an effient t
+               </p>       
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <div>
+                    
+                </div>
+                <div class="btn-group mt-4" role="group">
+                     
+                 </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

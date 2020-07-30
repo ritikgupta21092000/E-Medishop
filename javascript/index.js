@@ -23,6 +23,9 @@ $(document).ready(function () {
   $("#delete").on("click", function () {
     $("#deleteModal").modal("toggle");
   });
+  $("#ContactUs").on("click", function () {
+    $("#ContactUsModal").modal("toggle");
+  });
   var date = new Date();
   var year = date.getFullYear();
   document.getElementById("year").innerHTML = year;

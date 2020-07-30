@@ -1,5 +1,6 @@
 <?php 
   include("db_conn.php");
+  include("./partials/login_signup.php");
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,7 @@
 <body>
 <?php include("./partials/navbar.php"); ?>
 <?php include("./partials/modal.php"); ?>
-<div class="card">
+<div class="card mt-5 pt-2">
     <div class="card-header">
           <h3 class="col-12 col-sm-8">Shop Now <br>COVID Essentials| Upto 80% Off</h3>
     </div>

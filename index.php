@@ -1,6 +1,9 @@
 <?php 
   include("db_conn.php");
   $issignedup = false;
+  $issignedin = false;
+  session_start();
+  $_SESSION["username"] = "";
   if (isset($_POST["signup"])) {
     $fname = $_POST["firstname"];
     $lname = $_POST["lastname"];
@@ -33,7 +36,21 @@
   if (isset($_POST["signin"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
+    $q = "select * from `signup` where `username` = '$username' and `password` = '$password'";
+    $query = mysqli_query($con, $q);
+    if (mysqli_num_rows($query) > 0) {
+      $issignedin = true;
 
+      while($result = mysqli_fetch_array($query)) {
+        $_SESSION["username"] = $result["username"];
+        if ($result["admin"] == "true") {
+          header("location: dashboard.php");
+        }
+        
+      }
+    } else {
+      echo "<script>alert('Invalid Username Or Password')</script>";
+    }
   }
 ?>
 <!DOCTYPE html>
@@ -54,7 +71,82 @@
     <?php echo "<script>swal('Successfully Signed Up!', 'Clicked the Ok button!', 'success')</script>"; ?>
   <?php } ?>
 
+    <?php if ($issignedin) { ?>
+
+    <?php echo "<script>swal('Successfully Signed In!', 'Clicked the Ok button!', 'success')</script>"; ?>
+  <?php } ?>
+
   <?php include("./partials/navbar.php"); ?>
+
+  <div id="ContactUsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">ContactUs </h4>
+          <button type="button" class="close" data-dismiss="modal" id="close3">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-content">
+            <div class="col-12">
+               <h3>Location Information</h3>
+            </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                    <h5>Our Address</h5>
+                     <address style="font-size: 100%">
+                   A-Block, Thakur Educational Campus<br>
+                   Shyamnarayan Thakur Marg, Thakur Village<br>
+                   Kandivali(E). Mumbai - 400101.<br></address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <div>
+                    <i class="fa fa-phone"></i>: +922 1234 5678<br>
+                    <i class="fa fa-fax"></i>: +922 8765 4321<br>
+                    <i class="fa fa-envelope"></i>:
+                    <a href="mailto:Emedishop2020@gmail.com">Emedishop2020@gmail.com</a>
+                </div>
+                <div class="btn-group mt-4" role="group">
+                     <a role="button" class="btn btn-primary" href="tel:+92212345678"><i class="fa fa-phone"></i> Call</a>
+                     <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                     <a role="button" class="btn btn-success" href="mailto:Emedishop2020@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="AboutUsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">About Us </h4>
+          <button type="button" class="close" data-dismiss="modal" id="close3">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-content">
+            <div class="col-12">
+               <h3>Our Mission</h3>
+            </div>
+            <div class="col-12 ">
+               <p>
+                  We, students of Thakur college of Engineering and Technology have chosen this topic as our Employablity Development Skills(ESD) Project with the mission to provide an efficient tool to the customers for purchasing online medicines with best offers available. Sometimes, It may happen that required prescribed medicine is not available at our local shops such as Covid Essential items specially during this Lockdown situation, so buyers can easily go through our website and get as per their requirements. So, our aim is to help the human kind by providing Quality Medicines at Affordable Generic Medical Store price or even less than that with good offers.
+               </p>     
+            </div>
+            <div class="col-12 col-sm-6">
+                <div>
+                  <h5>Creators : </h5>
+                  <h6>Pratik Gupta<br>Richa Gupta<br>Ritik Gupta<br>Shivam Gupta<br>Suman Gupta</h6>
+                </div>
+                <div class="btn-group mt-4" role="group">
+                  <h5>Thank you for visiting our website.....</h5>  
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
@@ -64,7 +156,7 @@
           <button type="button" class="close" data-dismiss="modal" id="close1">&times;</button>
         </div>
         <div class="modal-body">
-          <form>
+          <form method="post">
             <div class="form-row">
               <div class="form-group col-sm-4">
                 <label class="sr-only" for="exampleInputUsername3">Username</label>

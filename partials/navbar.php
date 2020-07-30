@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: rgb(52, 75, 13);">
-    <div class="container">
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,18 +40,26 @@
               </b>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">24x7 Customer Care</a>
-              <a class="dropdown-item" href="#">About Us</a>
+              <a class="dropdown-item" href="#ContactUsModal" role="button" id="ContactUs">24x7 Customer Care</a>
+              <a class="dropdown-item" data-toggle="modal" href="#AboutUsModal">About Us</a>
               <a class="dropdown-item" href="#FeedbackModal" role="button" id="Feedback">Give Feedback</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="cart.php">
               <b style="color: white;">
                 <i class="fa fa-shopping-cart" style="font-size:24px"></i> Cart
               </b>
             </a>
           </li>
+          <?php if ($_SESSION["username"] != "") { ?>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Hello <?php echo $_SESSION["username"] ?>
+            </a>
+          </li>
+          <a href="logout.php" class="mt-2"><i class="fa fa-sign-in"></i> Logout</a>
+          <?php } ?>
         </ul>
       </div>
     </div>

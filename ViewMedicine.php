@@ -1,18 +1,18 @@
 <?php
 include('db_conn.php');
+include("./partials/login_signup.php");
 if(isset($_POST['yes'])){
      $med_Id = $_POST['med_Id'];
-     $q = "DELETE FROM `admin` where `med_Id`='$med_Id'";
+     $q = "DELETE FROM `medicines` where `med_id`='$med_Id'";
      $query = mysqli_query($con, $q);
   }
 if(isset($_POST['Update'])){
      $med_Id = $_POST['med_Id'];
-     $image=$_POST['image'];
      $med_name = $_POST['med_name'];
      $price = $_POST['price'];
      $med_type =$_POST['med_type'];
      $prescription_required = $_POST['prescription_required'];
-     $q = "UPDATE `admin` set  `image`='$image' ,`med_name`='$med_name' ,`price`='$price', `med_type`='med_type' ,`prescription_required`='$prescription_required' where `med_Id`='$med_Id'";
+     $q = "UPDATE `medicines` set  `med_name`='$med_name' ,`price`='$price', `med_type`='med_type' ,`prescription_required`='$prescription_required' where `med_id`='$med_Id'";
      $query = mysqli_query($con, $q);
   }
 ?>
@@ -59,7 +59,7 @@ if(isset($_POST['Update'])){
           <td><?php echo $row['prescription_required']; ?></td>
           <td><?php echo $row['created_at']; ?></td>
           <td>
-            <a href="#EditModal" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+            <a href="#EditModal" data-toggle="modal" data-target="#editModal"><i class="fa fa-pencil"></i></a>
             <a href="#deleteModal" class="text-danger" data-toggle="modal"><i class="fa fa-trash"></i></a>
 
           </td>

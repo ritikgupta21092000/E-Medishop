@@ -1,5 +1,6 @@
 <?php 
   include("db_conn.php");
+  include("./partials/login_signup.php");
   if (isset($_POST["insert"])) {
     $upload = "./images/";
     $path = $upload.basename($_FILES["file"]["name"]);
@@ -15,7 +16,6 @@
     $med_name = $_POST["med_name"];
     $price = $_POST["price"];
     $med_type = $_POST["med_type"];
-    echo $med_type;
     $prescription_required = $_POST["prescription_required"];
     $q = "Insert into `medicines`(`image`, `med_name`, `price`, `med_type`, `prescription_required`) VALUES ('$path', '$med_name', '$price', '$med_type', '$prescription_required')";
     $query = mysqli_query($con, $q);
@@ -40,7 +40,7 @@
         <hr>
       </div>
       <div class="sidebar-content">
-        <a href="#" class="active"><i class="fa fa-home"></i> Home</a>
+        <a href="index.php" class="active"><i class="fa fa-home"></i> Home</a>
         <a data-toggle="modal" href="#AddModal" role="button"><i class="fa fa-medkit" id="Add"></i> Add Medicine</a>
         <a href="#"><i class="fa fa-cart-arrow-down"></i> View All Orders</a>
         <a href="./ViewMedicine.php"><i class="fas fa-book-medical"></i> View All Medicine</a>
@@ -56,7 +56,8 @@
           <?php
             $q = "select * from signup";
             $query = mysqli_query($con, $q);
-            $result = mysqli_num_rows($query)
+            $result = mysqli_num_rows($query);
+            echo $result;
            ?>
         </div>
       </div>
