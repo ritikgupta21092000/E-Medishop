@@ -46,7 +46,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cart.php">
+            <a class="nav-link" href="viewCart.php">
               <b style="color: white;">
                 <i class="fa fa-shopping-cart" style="font-size:24px"></i> Cart
               </b>

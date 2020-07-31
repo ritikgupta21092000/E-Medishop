@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	$med_name=$_POST['med_name'];
+	$event=$_POST['event'];
+	if($event=="delete"){
+		unset($_SESSION[$med_name]);
+	}
+	header('location:viewCart.php');
+?>

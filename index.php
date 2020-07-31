@@ -374,75 +374,105 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>COVID Essentials| Upto 80% Off</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="./CovidEssentials.php">See all</a></h5>
+          <h5 class="mr-0"><a href="#">See all</a></h5>
         </div>
       </div>
     </div>
     <div class="card-body">
-      <form>
+     
         <div class="row row-content align-items-center">
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/CE-1.jpg">
               </div>
               <h6>Wildcraft Hypashield W95 Reusable Outdoor</h6>
               <p>Rs.180.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Wildcraft Hypashield W95 Reusable Outdoor">
+              <input type="hidden" name="price" value="180">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/CE-2.jpg">
               </div>
               <h6>Ciphands Antiseptic hand Sanitizer 100 ml</h6>
               <p>Rs.50.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Ciphands Antiseptic hand Sanitizer 100 ml">
+              <input type="hidden" name="price" value="50">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/CE-3.jpg">
               </div>
               <h6>Floh Non Contact Digital Infrared Thermometer</h6>
               <p>Rs.1,499.75</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Floh Non Contact Digital Infrared Thermometer">
+              <input type="hidden" name="price" value="1500">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/CE-4.jpg">
               </div>
               <h6>3-Ply Disposable Surgical Face Mask 10's</h6>
               <p>Rs.160.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="3-Ply Disposable Surgical Face Mask 10s">
+              <input type="hidden" name="price" value="160">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/CE-5.jpg">
               </div>
               <h6>Essentium Phygen 5-Layer N95 Face Mask</h6>
               <p>Rs.104.65</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Essentium Phygen 5-Layer N95 Face Mask">
+              <input type="hidden" name="price" value="105">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/CE-6.jpg">
               </div>
               <h6>Essentium Phygen KN95 Mask with Respirator 1's</h6>
               <p>Rs.1126.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Essentium Phygen KN95 Mask with Respirator 1s">
+              <input type="hidden" name="price" value="1126">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
         </div>
-      </form>
+    
     </div>
   </div>
 
@@ -453,7 +483,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>Homeopathy| Flat 20% Cashback</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="./Homeopathy.php">See all</a></h5>
+          <h5 class="mr-0"><a href="#">See all</a></h5>
         </div>
       </div>
     </div>
@@ -461,64 +491,94 @@
       <form>
         <div class="row row-content align-items-center">
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/H-1.jpg">
               </div>
               <h6>Bakson'S Go Tox Drops 30 ml</h6>
               <p>Rs.110.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Homeopathy">
+              <input type="hidden" name="med_name" value="BaksonS Go Tox Drops 30 ml">
+              <input type="hidden" name="price" value="110">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/H-2.jpg">
               </div>
               <h6>Bakson's Tonsil Aid Paediatric Tablet 25 gm</h6>
               <p>Rs.100.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Homeopathy">
+              <input type="hidden" name="med_name" value="Baksons Tonsil Aid Paediatric Tablet 25 gm">
+              <input type="hidden" name="price" value="100">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/H-3.jpg">
               </div>
               <h6>Bakson's Gro Up Drops 30 ml</h6>
               <p>Rs.110.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Homeopathy">
+              <input type="hidden" name="med_name" value="Baksons Gro Up Drops 30 ml">
+              <input type="hidden" name="price" value="110">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/H-4.jpg">
               </div>
               <h6>Hapdco Aqui Plus Cream 25 gm</h6>
               <p>Rs.90.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Homeopathy">
+              <input type="hidden" name="med_name" value="Hapdco Aqui Plus Cream 25 gm">
+              <input type="hidden" name="price" value="90">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/H-5.jpg">
               </div>
               <h6>Wheezal Jaborandi Hair Treatment Oil 110 ml</h6>
               <p>Rs.110.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Homeopathy">
+              <input type="hidden" name="med_name" value="Wheezal Jaborandi Hair Treatment Oil 110 ml">
+              <input type="hidden" name="price" value="110">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/H-6.jpg">
               </div>
               <h6>Dr. Reckeweg R73 Spondarthrin Drops 22 ml</h6>
               <p>Rs.235.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Homeopathy">
+              <input type="hidden" name="med_name" value="Dr. Reckeweg R73 Spondarthrin Drops 22 ml">
+              <input type="hidden" name="price" value="235">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
         </div>
       </form>
@@ -532,7 +592,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>Pain Killers| Flat 10% Off</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="./PainKillers.php">See all</a></h5>
+          <h5 class="mr-0"><a href="#">See all</a></h5>
         </div>
       </div>
     </div>
@@ -540,64 +600,94 @@
       <form>
         <div class="row row-content align-items-center">
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/PK-1.jpg">
               </div>
               <h6>Paingesic 20mg Tablet 10'S</h6>
               <p>Rs.105.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Pain Killer">
+              <input type="hidden" name="med_name" value="Paingesic 20mg Tablet 10'S">
+              <input type="hidden" name="price" value="105">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/PK-2.jpg">
               </div>
               <h6>Crocin Pain Relief Tablet 15'S</h6>
               <p>Rs.59.76</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Pain Killer">
+              <input type="hidden" name="med_name" value="Crocin Pain Relief Tablet 15S">
+              <input type="hidden" name="price" value="60">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/PK-3.jpg">
               </div>
               <h6>Moov Pain Relief Specialist Cream 50 gm</h6>
               <p>Rs.152.10</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Pain Killer">
+              <input type="hidden" name="med_name" value="Moov Pain Relief Specialist Cream 50 gm">
+              <input type="hidden" name="price" value="152">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/PK-4.jpg">
               </div>
               <h6>Amrutanjan Pain Balm - Extra Power 8 ml</h6>
               <p>Rs.37.24</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Pain Killer">
+              <input type="hidden" name="med_name" value="Amrutanjan Pain Balm - Extra Power 8 ml">
+              <input type="hidden" name="price" value="37">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/PK-5.jpg">
               </div>
               <h6>Moov Pain Relief Specialist Spray 35 gm</h6>
               <p>Rs.117.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Pain Killer">
+              <input type="hidden" name="med_name" value="Moov Pain Relief Specialist Spray 35 gm">
+              <input type="hidden" name="price" value="117">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/PK-6.jpg">
               </div>
               <h6>Himalaya Pain Balm Strong - Mint 10 gm</h6>
               <p>Rs.30.45</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="Pain Killer">
+              <input type="hidden" name="med_name" value="Himalaya Pain Balm Strong - Mint 10 gm">
+              <input type="hidden" name="price" value="30">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
         </div>
       </form>
@@ -611,7 +701,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>AntiBacterial Medicines| Flat 18% Cashback</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="./AntiBacterial.php">See all</a></h5>
+          <h5 class="mr-0"><a href="#">See all</a></h5>
         </div>
       </div>
     </div>
@@ -619,64 +709,94 @@
       <form>
         <div class="row row-content align-items-center">
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/AB-1.jpg">
               </div>
               <h6>Rifagut 550mg Tablet 10'S</h6>
               <p>Rs.395.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Rifagut 550mg Tablet 10S">
+              <input type="hidden" name="price" value="395">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/AB-2.jpg">
               </div>
               <h6>Pentids 400 Tablet 10'S</h6>
               <p>Rs.16.50</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Pentids 400 Tablet 10S">
+              <input type="hidden" name="price" value="17">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/AB-3.jpg">
               </div>
               <h6>Candiforce 100mg Capsule 7'S</h6>
               <p>Rs.76.47</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Candiforce 100mg Capsule 7S">
+              <input type="hidden" name="price" value="77">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/AB-4.jpg">
               </div>
               <h6>T Bact Ointment 15gm</h6>
               <p>Rs.290.30</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="T Bact Ointment 15gm">
+              <input type="hidden" name="price" value="290">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/AB-5.jpg">
               </div>
               <h6>Doxy 1 L DR Forte Capsule 10'S</h6>
               <p>Rs.86.67</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Doxy 1 L DR Forte Capsule 10S">
+              <input type="hidden" name="price" value="87">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
           <div class="col-12 col-md-2">
+            <form action="insertCart.php" method="post">
             <div class="card card-body">
               <div class="container">
                 <img src="./images/AB-6.jpg">
               </div>
               <h6>Ceftum 500mg Tablet 4'S</h6>
               <p>Rs.431.00</p>
-              <button type="submit" class="btn btn-success">Add to Cart</button>
+              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_name" value="Ceftum 500mg Tablet 4S">
+              <input type="hidden" name="price" value="431">
+              <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
             </div>
+            </form>
           </div>
         </div>
       </form>
