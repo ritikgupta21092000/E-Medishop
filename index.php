@@ -374,7 +374,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>COVID Essentials| Upto 80% Off</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./CovidEssentials.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -483,7 +483,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>Homeopathy| Flat 20% Cashback</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./Homeopathy.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -592,7 +592,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>Pain Killers| Flat 10% Off</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./PainKillers.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -701,7 +701,7 @@
           <h3 class="col-12 col-sm-8">Shop Now <br>AntiBacterial Medicines| Flat 18% Cashback</h3>
         </div>
         <div class="col-12 col-sm-1">
-          <h5 class="mr-0"><a href="#">See all</a></h5>
+          <h5 class="mr-0"><a href="./AntiBacterial.php">See all</a></h5>
         </div>
       </div>
     </div>
@@ -716,7 +716,7 @@
               </div>
               <h6>Rifagut 550mg Tablet 10'S</h6>
               <p>Rs.395.00</p>
-              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_type" value="Anti Bacterial">
               <input type="hidden" name="med_name" value="Rifagut 550mg Tablet 10S">
               <input type="hidden" name="price" value="395">
               <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
@@ -731,7 +731,7 @@
               </div>
               <h6>Pentids 400 Tablet 10'S</h6>
               <p>Rs.16.50</p>
-              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_type" value="Anti Bacterial">
               <input type="hidden" name="med_name" value="Pentids 400 Tablet 10S">
               <input type="hidden" name="price" value="17">
               <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
@@ -746,7 +746,7 @@
               </div>
               <h6>Candiforce 100mg Capsule 7'S</h6>
               <p>Rs.76.47</p>
-              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_type" value="Anti Bacterial">
               <input type="hidden" name="med_name" value="Candiforce 100mg Capsule 7S">
               <input type="hidden" name="price" value="77">
               <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
@@ -761,7 +761,7 @@
               </div>
               <h6>T Bact Ointment 15gm</h6>
               <p>Rs.290.30</p>
-              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_type" value="Anti Bacterial">
               <input type="hidden" name="med_name" value="T Bact Ointment 15gm">
               <input type="hidden" name="price" value="290">
               <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
@@ -776,7 +776,7 @@
               </div>
               <h6>Doxy 1 L DR Forte Capsule 10'S</h6>
               <p>Rs.86.67</p>
-              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_type" value="Anti Bacterial">
               <input type="hidden" name="med_name" value="Doxy 1 L DR Forte Capsule 10S">
               <input type="hidden" name="price" value="87">
               <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
@@ -791,7 +791,7 @@
               </div>
               <h6>Ceftum 500mg Tablet 4'S</h6>
               <p>Rs.431.00</p>
-              <input type="hidden" name="med_type" value="COVID Essential">
+              <input type="hidden" name="med_type" value="Anti Bacterial">
               <input type="hidden" name="med_name" value="Ceftum 500mg Tablet 4S">
               <input type="hidden" name="price" value="431">
               <input type="submit" class="btn btn-success" value="Add to Cart" name="insertCart">
